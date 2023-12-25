@@ -51,7 +51,7 @@ RT-FODS utilizes two main deep learning models, each serving a unique purpose in
 - **Copy and Concatenate**: Merging features for precise localization.
 - **Convolutional Layers + Batch Normalization**: Refining the feature maps for final output.
 ### Fig 3. U-Net Architecture with VGG Backbone
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/Overall-architecture-of-VGG-Unet.ppm.png)
+![U-Net Architecture with VGG Backbone](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FOverall-architecture-of-VGG-Unet_fig1_348296106&psig=AOvVaw2OIPY2V4XsCspIfzMPjBWs&ust=1703623863436000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCHxcy7q4MDFQAAAAAdAAAAABAD)
 
 
 ### 2. Autoencoder for Anomaly Detection
@@ -62,14 +62,10 @@ RT-FODS utilizes two main deep learning models, each serving a unique purpose in
 - **Reshape Layer**: Readies encoded features for upsampling.
 - **Conv2D Transpose Layer**: Reconstructs original image dimensions.
 - **Output Layer**: Produces a reconstructed image for anomaly comparison.
+### Fig 3. U-Net Architecture with VGG Backbone
+![Autoencoder Decoder](https://drive.google.com/file/d/1jxgNmFiDfCwjMRLl4k0GiHDMMRKQic0H/view?usp=share_link)
 
 Anomalies are detected by comparing the original input with the reconstructed image, leveraging discrepancies to flag foreign objects on rail tracks.
-
-### Fig 3. U-Net Architecture with VGG Backbone
-(Insert diagram here)
-
-### Fig 4. Autoencoder Architecture for Anomaly Detection
-(Insert diagram here)
 
 ### Technologies Used
 
