@@ -50,6 +50,9 @@ RT-FODS utilizes two main deep learning models, each serving a unique purpose in
 - **Upsampling**: Restoring resolution for detailed segmentation.
 - **Copy and Concatenate**: Merging features for precise localization.
 - **Convolutional Layers + Batch Normalization**: Refining the feature maps for final output.
+### Fig 3. U-Net Architecture with VGG Backbone
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/Overall-architecture-of-VGG-Unet.ppm.png)
+
 
 ### 2. Autoencoder for Anomaly Detection
 - **Input Layer**: Starts with multi-channel rail line images.
