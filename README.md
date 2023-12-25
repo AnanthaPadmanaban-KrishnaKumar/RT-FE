@@ -45,10 +45,10 @@ The dataset's detailed annotations are crucial for generating precise rail track
 - **Convolutional Layers + Batch Normalization**: Refines the feature maps to deliver the final segmented output.
 
 ### Fig 1. U-Net Architecture with VGG Backbone
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/VGG-Unet.png)
-
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/VGG-Unet.png)
 ### Fig 2. Segment Model Input and Result 
-![Segment Model Input and Result](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/segmentmask.png)
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
+
 
 This architecture ensures the production of a highly accurate segmentation map, distinctly delineating rail track features, critical for subsequent analysis and safety measures.
 
