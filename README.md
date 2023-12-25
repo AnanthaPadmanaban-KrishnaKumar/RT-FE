@@ -92,7 +92,7 @@ The focal loss component reshapes the loss function to prioritize challenging, m
 
 We average weighted binary crossentropy and focal loss to create a robust loss landscape:
 
-Combined Loss = (Weighted BCE + Focal Loss) / 2
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/combined.png)
 
 Here is the loss graph from our training process, showing the model's learning progress:
 ### Fig 3. Loss Graph
