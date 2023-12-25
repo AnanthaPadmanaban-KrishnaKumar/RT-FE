@@ -80,6 +80,41 @@ The U-Net's architecture is particularly adept at maintaining high-resolution de
 
 Through this methodology, our model effectively captures the intricate details required for accurate rail line segmentation, even in the diverse conditions presented by the RailSem19 dataset images.
 
+## Autoencoder for Anomaly Detection
+
+We use an autoencoder architecture to pinpoint anomalies on rail tracks, which is adept at identifying deviations from the norm within the rail line images.
+
+### Fig 4. Autoencoder Architecture for Anomaly Detection
+(Insert diagram of the autoencoder architecture here)
+
+- **Input Layer**: 
+  - Begins with a multi-channel input image of rail line patches, for example, 16x16x3 in dimensions.
+  - The input layer feeds the image into the autoencoder.
+
+- **Convolutional Layer (Conv2D)**: 
+  - Applies filters (e.g., 64 filters of size 3x3) to detect local features like edges and textures within the rail line images.
+
+- **Flatten Layer**: 
+  - Converts the multi-dimensional output of the Conv2D layer into a one-dimensional array for processing in dense layers.
+
+- **Dense Layers (Latent Space)**: 
+  - Processes the features into a series of fully connected layers, reducing the data dimensionality and encoding it into a compact latent space.
+
+- **Reshape Layer**: 
+  - Transforms the data from the latent space back into a multi-dimensional array to prepare for the decoding process.
+
+- **Conv2D Transpose Layer**: 
+  - Acts as the inverse of the Conv2D layer, upsampling the data from the latent space back to its original image dimensions.
+
+- **Output Layer (Reconstructed Image I’)**: 
+  - Produces a reconstructed version of the input image, aiming to closely match the original in the absence of anomalies.
+
+- **Anomaly Detection**: 
+  - Relies on the comparison between the input image (I) and the reconstructed image (I').
+  - Utilizes the reconstruction error to detect anomalies, with higher errors indicating potential anomalies.
+
+The training of the autoencoder focuses on normal rail line images, enabling the model to reconstruct these effectively. When faced with anomalies, the reconstruction error spikes, which our system uses as a signal to flag potential issues. By setting a threshold for this error, we can reliably identify and alert to anomalies in the rail lines.
+
 ### Technologies Used
 
 List the technologies, libraries, and frameworks used in your project.
