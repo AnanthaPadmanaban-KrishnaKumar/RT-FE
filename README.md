@@ -155,6 +155,6 @@ Make sure you have the following installed:
 3. pip install -r requirements.txt
 
 ### Running the Project
-python main.py
+1. python main.py
 
 Thank you for your interest in RT-FE, and we look forward to your contributions to this vital field of research and development.
