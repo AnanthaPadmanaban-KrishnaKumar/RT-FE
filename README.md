@@ -71,7 +71,25 @@ The dataset's detailed annotations are crucial for generating precise rail track
 - **Callbacks**: Early Stopping with a patience of 16 epochs and model checkpointing to save the best-performing model iteration.
 - **TensorBoard**: Utilized for real-time monitoring of training metrics and performance analysis.
 
-## Loss Function Graph
+## Loss Function
+
+### Custom Loss Function for Enhanced Learning
+
+To extract rail line features using a U-Net with VGG19 as the backbone, we implement a custom loss function that significantly enhances the model's learning from the complex data distribution in rail scenes.
+
+#### Weighted Binary Crossentropy
+
+Our custom loss function begins with weighted binary crossentropy, addressing the class imbalance issue common in rail image segmentation. The weight parameters `w0` and `w1` are assigned to the background and rail line classes, respectively, to focus the model's learning on the minority class, which is critical for the detection task.
+
+#### Focal Loss
+
+The focal loss component reshapes the loss function to prioritize challenging, misclassified examples. It introduces hyperparameters `alpha` and `gamma` to control the contribution of each example to the loss, enabling the model to focus on difficult cases crucial for accurate feature extraction.
+
+#### Combined Loss
+
+We average weighted binary crossentropy and focal loss to create a robust loss landscape:
+
+Combined Loss = (Weighted BCE + Focal Loss) / 2
 
 Here is the loss graph from our training process, showing the model's learning progress:
 ### Fig 3. Loss Graph
@@ -79,7 +97,6 @@ Here is the loss graph from our training process, showing the model's learning p
 
 ### Fig 2. Segment Model Input and Result 
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
-
 
 This architecture ensures the production of a highly accurate segmentation map, distinctly delineating rail track features, critical for subsequent analysis and safety measures.
 
