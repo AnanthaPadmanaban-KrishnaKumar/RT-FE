@@ -23,7 +23,7 @@ The second stage utilizes self-supervised learning with autoencoders to detect a
 
 ## Background and Motivation
 The approach detailed in the paper "Anomaly Detection on the Rail Lines Using Semantic Segmentation and Self-supervised Learning" has shown success in real-world applications, highlighting the efficacy of the method. This project builds upon the technological advancements in semantic segmentation, utilizing the RailSem19 dataset to push the boundaries further in the railway sector.
-## 3. Methods
+## Methods
 
 ### Data Source
 
