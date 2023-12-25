@@ -46,6 +46,32 @@ The dataset's detailed annotations are crucial for generating precise rail track
 
 ### Fig 1. U-Net Architecture with VGG Backbone
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/VGG-Unet.png)
+
+## Dataset Composition
+
+- **Training Set**: 2,000 images with corresponding segmentation masks.
+- **Testing Set**: 1,000 images with associated masks for model accuracy evaluation.
+
+## Preprocessing Techniques
+
+- **Resizing**: Uniformly resized images and masks to 857 x 572 x 3 to standardize the input data.
+- **Normalization**: Applied normalization to standardize pixel values across all images and eliminate outliers.
+
+## Training Infrastructure
+
+- Conducted on **Amazon SageMaker** with an NVIDIA Tesla T4 GPU (ml.g5.2xlarge instance).
+- The training process was completed in approximately 19 hours.
+
+## Training Hyperparameters
+
+- **Epochs**: 100 epochs to balance learning and prevent overfitting.
+- **Batch Size**: A batch size of 4, optimizing memory usage and model performance.
+- **Learning Rate**: Set to 0.0001 for steady convergence without overshooting minima.
+- **Custom Loss Function**: Weighted Binary Crossentropy with Focal Loss to address class imbalance and focus on challenging examples.
+- **Primary Metric**: Accuracy was used to gauge predictive performance.
+- **Callbacks**: Early Stopping with a patience of 16 epochs and model checkpointing to save the best-performing model iteration.
+- **TensorBoard**: Utilized for real-time monitoring of training metrics and performance analysis.
+
 ### Fig 2. Segment Model Input and Result 
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
 
