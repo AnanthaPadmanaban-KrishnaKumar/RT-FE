@@ -98,7 +98,6 @@ Here is the loss graph from our training process, showing the model's learning p
 ### Fig 3. Loss Graph
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/lossgraph.png)
 
-### Fig 2. Result
 ### Results
 
 The results demonstrate the effectiveness of the U-Net model with VGG19 backbone in segmenting rail track features:
