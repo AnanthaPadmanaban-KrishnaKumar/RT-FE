@@ -75,7 +75,7 @@ The dataset's detailed annotations are crucial for generating precise rail track
 
 Here is the loss graph from our training process, showing the model's learning progress:
 ### Fig 3. Loss Graph
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/lossgraph.png)
 
 ### Fig 2. Segment Model Input and Result 
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
