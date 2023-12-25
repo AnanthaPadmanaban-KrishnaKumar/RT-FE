@@ -54,7 +54,6 @@ RT-FODS utilizes two main deep learning models, each serving a unique purpose in
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/VGG-Unet.png)
 ### Fig 2. Segment Model Input and Result 
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
-https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png
 
 ### 2. Autoencoder for Anomaly Detection
 - **Input Layer**: Starts with multi-channel rail line images.
