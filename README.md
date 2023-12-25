@@ -134,4 +134,27 @@ The RT-FE project not only demonstrates the effectiveness of applying cutting-ed
 
 We believe that the methods and findings of the RT-FE project will serve as a valuable resource for researchers and practitioners in the field. We look forward to seeing how the community will build upon our work to further enhance the state of rail safety technology and welcome contributions that will help to realize this vision.
 
-We encourage contributions and further research using RT-FE's methodologies and findings to advance the field of rail track analysis.
+We invite the research and development community to participate in improving and extending the RT-FE project. By collaborating, we can further the evolution of smart transportation infrastructure and safety.
+
+For more information, issues, or questions about the project, please open an issue in the GitHub repository or submit a pull request with your suggestions and improvements.
+
+## Getting Started
+
+To clone and run the RT-FE project on your local machine, follow these steps:
+
+### Prerequisites
+
+Make sure you have the following installed:
+- Python 3.6 or higher
+- pip (Python package installer)
+- Git
+
+### Installation
+1. git clone https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE.git
+2. cd RT-FE
+3. pip install -r requirements.txt
+
+### Running the Project
+python main.py
+
+Thank you for your interest in RT-FE, and we look forward to your contributions to this vital field of research and development.
