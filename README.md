@@ -99,15 +99,22 @@ Here is the loss graph from our training process, showing the model's learning p
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/lossgraph.png)
 
 ### Fig 2. Result
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019_image.jpg)
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019.jpg)
+### Results
 
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025_image.jpg)
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025.jpg)
+The results demonstrate the effectiveness of the U-Net model with VGG19 backbone in segmenting rail track features:
 
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00052_image.jpg)
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00052.jpg)
-
+<p float="left">
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019_image.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019.jpg" width="49%" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025_image.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025.jpg" width="49%" />
+</p>
+<p float="left">
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00052_image.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00052.jpg" width="49%" />
+</p>
 
 This architecture ensures the production of a highly accurate segmentation map, distinctly delineating rail track features, critical for subsequent analysis and safety measures.
 
