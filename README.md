@@ -44,32 +44,41 @@ Utilizing the annotations from the RailSem19 dataset, our mask generator script 
 
 ## Methodology
 
-Our project employs semantic segmentation using a U-Net architecture enhanced with a VGG backbone. This methodology is chosen for its efficacy in pixel-wise segmentation tasks, particularly suited for the complex task of rail anomaly detection.
+We apply semantic segmentation to the complex task of rail anomaly detection using a U-Net architecture with a VGG backbone, chosen for its precision in pixel-wise identification.
 
 ### U-Net Architecture with VGG Backbone
 
-#### VGG Backbone
-The VGG (Visual Geometry Group) model is a deep convolutional neural network that is recognized for its simplicity and depth. In our U-Net architecture, the VGG model acts as the encoder, sequentially applying convolutional layers with ReLU activations and max-pooling layers to capture hierarchical patterns in the data, from simple textures to complex rail line structures.
+- **VGG Backbone**: 
+  - Acts as the encoder in our U-Net architecture.
+  - Uses deep convolutional layers known for capturing complex image patterns.
+  - Includes ReLU activation functions and max-pooling to hierarchically process image features from simple to complex.
 
-#### Convolutional Layers (Conv) + ReLU
-Convolutional layers are the core components of our CNN, extracting spatial hierarchies of features. The ReLU activation function introduces non-linearity, enabling the network to learn complex patterns within the rail environment.
+- **Convolutional Layers (Conv) + ReLU**: 
+  - Serve as the primary feature extractors.
+  - ReLU introduces non-linearity, allowing for the capture of complex patterns.
 
-#### Max Pooling
-Max pooling layers reduce the spatial dimensions of the feature maps, making the model more invariant to input variations and ensuring focus on the most salient features.
+- **Max Pooling**: 
+  - Reduces spatial dimensions to focus on prominent features.
+  - Aids in the model's robustness to input variations and distortions.
 
-#### Upsampling
-In the decoder part of the U-Net, upsampling layers are crucial for increasing the resolution of feature maps, allowing the network to project detailed features back onto the original image size for accurate pixel-wise segmentation.
+- **Upsampling**: 
+  - Increases the spatial resolution during the decoding phase.
+  - Essential for translating learned features back to the original image scale.
 
-#### Copy and Concatenate
-A key feature of the U-Net architecture is the copy and concatenate operation. It merges the downsampled features with the upsampled ones, providing rich contextual information necessary for precise localization in the segmentation task.
+- **Copy and Concatenate**: 
+  - Merges features from the downsampling path with upsampled content.
+  - Provides contextual information critical for accurate localization.
 
-#### Convolutional Layers (Conv) + Batch Normalization
-Following feature concatenation, the network applies additional convolutional layers coupled with batch normalization. This step is vital for stabilizing the learning process and refining the feature maps, leading to the final segmentation output.
+- **Convolutional Layers (Conv) + Batch Normalization**: 
+  - Stabilizes learning by normalizing the input layers.
+  - Refines feature maps post-concatenation, preparing for the final segmentation output.
+
+The U-Net's architecture is particularly adept at maintaining high-resolution details through the upsampling process and merging low-level and high-level feature information. This results in a segmentation map that precisely differentiates rail lines from their surroundings, which is pivotal given the RailSem19 dataset's complexity.
 
 ### Fig 3. U-Net Architecture with VGG Backbone
-(Here, an illustrative figure of the U-Net architecture with the VGG backbone would be included.)
+(Insert diagram of the U-Net architecture with the VGG backbone here)
 
-The final output of the U-Net architecture is a segmentation map that accurately delineates rail lines from the background. By utilizing the rich feature set extracted by the VGG backbone from the diverse RailSem19 images, combined with the precise localization capabilities of U-Net, our system is equipped to detect fine details in rail lines against complex backdrops.
+Through this methodology, our model effectively captures the intricate details required for accurate rail line segmentation, even in the diverse conditions presented by the RailSem19 dataset images.
 
 ### Technologies Used
 
