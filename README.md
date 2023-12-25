@@ -49,8 +49,8 @@ The dataset's detailed annotations are crucial for generating precise rail track
 
 ## Dataset Composition
 
-- **Training Set**: 2,000 images with corresponding segmentation masks.
-- **Testing Set**: 1,000 images with associated masks for model accuracy evaluation.
+- **Training Set**: 4,000 images with corresponding segmentation masks.
+- **Testing Set**: 1,500 images with associated masks for model accuracy evaluation.
 
 ## Preprocessing Techniques
 
@@ -60,7 +60,6 @@ The dataset's detailed annotations are crucial for generating precise rail track
 ## Training Infrastructure
 
 - Conducted on **Amazon SageMaker** with an NVIDIA Tesla T4 GPU (ml.g5.2xlarge instance).
-- The training process was completed in approximately 19 hours.
 
 ## Training Hyperparameters
 
