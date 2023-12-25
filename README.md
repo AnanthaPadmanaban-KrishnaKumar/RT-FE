@@ -80,10 +80,13 @@ To extract rail line features using a U-Net with VGG19 as the backbone, we imple
 #### Weighted Binary Crossentropy
 
 Our custom loss function begins with weighted binary crossentropy, addressing the class imbalance issue common in rail image segmentation. The weight parameters `w0` and `w1` are assigned to the background and rail line classes, respectively, to focus the model's learning on the minority class, which is critical for the detection task.
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/weighted.png)
 
 #### Focal Loss
 
 The focal loss component reshapes the loss function to prioritize challenging, misclassified examples. It introduces hyperparameters `alpha` and `gamma` to control the contribution of each example to the loss, enabling the model to focus on difficult cases crucial for accurate feature extraction.
+
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/focal.png)
 
 #### Combined Loss
 
