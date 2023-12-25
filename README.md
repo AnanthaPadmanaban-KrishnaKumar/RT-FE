@@ -71,6 +71,12 @@ The dataset's detailed annotations are crucial for generating precise rail track
 - **Callbacks**: Early Stopping with a patience of 16 epochs and model checkpointing to save the best-performing model iteration.
 - **TensorBoard**: Utilized for real-time monitoring of training metrics and performance analysis.
 
+## Loss Function Graph
+
+Here is the loss graph from our training process, showing the model's learning progress:
+### Fig 3. Loss Graph
+![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
+
 ### Fig 2. Segment Model Input and Result 
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/segmentmask.png)
 
