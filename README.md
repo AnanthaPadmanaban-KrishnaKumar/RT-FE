@@ -112,8 +112,8 @@ The results demonstrate the effectiveness of the U-Net model with VGG19 backbone
   <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025.jpg" width="49%" />
 </p>
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00052_image.jpg" width="49%" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00052.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs000952_image.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs000952.jpg" width="49%" />
 </p>
 
 This architecture ensures the production of a highly accurate segmentation map, distinctly delineating rail track features, critical for subsequent analysis and safety measures.
