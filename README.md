@@ -150,7 +150,7 @@ Make sure you have the following installed:
 - Git
 
 ### Installation
-1. git clone https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE.git
+1. git clone [https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE.git](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS)
 2. cd RT-FE
 3. pip install -r requirements.txt
 
