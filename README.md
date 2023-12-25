@@ -3,48 +3,46 @@
 ![Rail Track Feature Extraction Example](URL_TO_YOUR_IMAGE)
 
 ## Introduction
-RT-FE employs advanced deep learning techniques for feature extraction from rail tracks. The system is designed to autonomously identify key features within rail scenes, which is crucial for subsequent tasks like anomaly detection, reducing the need for manual labeling of training data.
+RT-FE harnesses advanced deep learning to precisely extract features from rail tracks. This autonomous system is pivotal for tasks such as anomaly detection, significantly diminishing the need for manual data labeling and enhancing the efficiency and accuracy of rail track analysis.
 
 ## Project Description
-
-The RT-FE project uses binary semantic segmentation to isolate rail tracks from their environment, providing a clean separation of features for further analysis and processing.
+RT-FE employs binary semantic segmentation to isolate rail tracks from their surroundings. This clean separation of features sets the stage for in-depth analysis and is integral to ensuring rail track safety and integrity.
 
 ### Binary Semantic Segmentation
-We achieve the isolation of rail features through a process known as binary semantic segmentation. This method sets the stage for extracting detailed features critical for maintaining rail safety.
+Through binary semantic segmentation, RT-FE accurately isolates rail features, enabling detailed examination and feature extraction. This process is essential for subsequent analysis, ensuring that crucial features are not overlooked.
 
 ## Key Contributions
 
-- **High Accuracy in Feature Extraction**: Our system provides precise segmentation of rail track features, ensuring high-quality data for further analysis.
-- **Reduction in Label Dependency**: The binary semantic segmentation approach significantly reduces the need for a large labeled dataset.
-- **State-of-the-Art Frameworks**: We incorporate advanced frameworks like U-Net with a VGG backbone to segment rail track features effectively.
-- **Environmental Adaptability**: The segmentation model is capable of handling diverse environmental conditions, demonstrating robust performance.
+- **Enhanced Feature Extraction Accuracy**: Our system guarantees precise segmentation of rail track features, providing high-quality data for downstream analyses.
+- **Reduced Reliance on Labeled Data**: Leveraging binary semantic segmentation significantly minimizes the need for extensive labeled datasets.
+- **Advanced Technological Integration**: The project incorporates leading-edge technologies, specifically the U-Net architecture with a VGG backbone, to ensure effective rail track segmentation.
+- **Adaptability Across Environments**: The model demonstrates exceptional performance in various environmental conditions, showcasing its robustness and reliability.
 
 ## Background and Motivation
-Rooted in the success of deep learning for practical applications, our initiative extends these advancements to rail track feature extraction. We utilize the RailSem19 dataset to create a foundation for developing technologies that enhance rail safety.
+Drawing inspiration from the proven efficacy of deep learning in practical scenarios, RT-FE extends these advancements to the realm of rail track feature extraction. Utilizing the comprehensive RailSem19 dataset, our project lays the groundwork for developing next-generation rail safety technologies.
 
 ## Methods
 
 ### Data Source
-
-The RailSem19 dataset is a pivotal component in our training process, offering a rich array of rail scenes for a robust development of our algorithms.
+The RailSem19 dataset is instrumental in our model’s development, offering an extensive collection of diverse rail scenes. This variety enriches our algorithm's training, ensuring its applicability in a multitude of real-world scenarios.
 
 **Dataset Highlights**:
-- **Access**: Available at [wilddash.cc](https://wilddash.cc)
-- **Variety**: Over 8,500 sequences that span a wide array of environmental conditions.
-- **Unique Annotations**: Manual and weakly supervised annotations that provide a detailed understanding of rail scenes.
+- **Accessibility**: Available at [wilddash.cc](https://wilddash.cc).
+- **Diversity**: Encompasses over 8,500 sequences across various environmental conditions.
+- **Innovative Annotations**: The dataset combines manual and weakly supervised annotations, providing an in-depth view of rail environments.
 
-**Application in RT-FE**:
-Annotations from the RailSem19 dataset are essential for creating precise masks for the rail tracks, enabling effective training of our segmentation model.
+**Implementation in RT-FE**:
+The dataset's detailed annotations are crucial for generating precise rail track masks, fundamental to the training of our segmentation model.
 
 ## Deep Learning Model
 
 ### U-Net with VGG Backbone
-- **VGG Backbone**: Serves as the encoder, essential for capturing the intricate patterns within rail scenes.
-- **Convolutional Layers + ReLU**: Extracts and processes features through learned filters and non-linear activation.
-- **Max Pooling**: Reduces the spatial dimensions, highlighting the most significant features for the task at hand.
-- **Upsampling**: Reconstructs the detailed feature map to match the original image's resolution.
-- **Copy and Concatenate**: Combines features from different levels of the network to maintain context and enhance localization.
-- **Convolutional Layers + Batch Normalization**: Further refines the feature maps to produce the final segmented output.
+- **VGG Backbone**: Captures intricate patterns as the encoder.
+- **Convolutional Layers + ReLU**: Facilitates feature extraction and processing.
+- **Max Pooling**: Highlights critical features by reducing spatial dimensions.
+- **Upsampling**: Restores resolution for detailed feature mapping.
+- **Copy and Concatenate**: Merges multi-level features for improved localization.
+- **Convolutional Layers + Batch Normalization**: Refines the feature maps to deliver the final segmented output.
 
 ### Fig 1. U-Net Architecture with VGG Backbone
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/VGG-Unet.png)
@@ -52,13 +50,12 @@ Annotations from the RailSem19 dataset are essential for creating precise masks 
 ### Fig 2. Segment Model Input and Result 
 ![Segment Model Input and Result](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/segmentmask.png)
 
-The U-Net architecture is optimized to maintain high-resolution details and merge both low-level and high-level information. This results in an accurate segmentation map that distinctly identifies rail track features.
+This architecture ensures the production of a highly accurate segmentation map, distinctly delineating rail track features, critical for subsequent analysis and safety measures.
 
 ### Technologies Used
 
 - **Framework**: TensorFlow, Keras
-- **Model**: VGG19 enhanced U-Net
-- **Data Processing**: Custom script for mask generation using JSON annotations
+- **Model**: U-Net enhanced with VGG19
+- **Data Processing**: Custom script for efficient mask generation using JSON annotations from RailSem19
 
-Contributors and researchers are welcome to utilize our findings and methods to build upon the field of rail track analysis.
-
+We encourage contributions and further research using RT-FE's methodologies and findings to advance the field of rail track analysis.
