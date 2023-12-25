@@ -104,15 +104,15 @@ Here is the loss graph from our training process, showing the model's learning p
 The results demonstrate the effectiveness of the U-Net model with VGG19 backbone in segmenting rail track features:
 
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019_image.jpg" width="49%" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019.jpg" width="49%" /> 
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019_image.jpg" width="49%" style="margin-right: 2%;" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00019.jpg" width="49%" />
 </p>
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025_image.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025_image.jpg" width="49%" style="margin-right: 2%;" />
   <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00025.jpg" width="49%" />
 </p>
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00952_image.jpg" width="49%" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00952_image.jpg" width="49%" style="margin-right: 2%;" />
   <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/rs00952.jpg" width="49%" />
 </p>
 
