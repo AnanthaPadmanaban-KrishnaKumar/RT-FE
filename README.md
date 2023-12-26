@@ -98,6 +98,28 @@ Here is the loss graph from our training process, showing the model's learning p
 ### Fig 3. Loss Graph
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/lossgraph.png)
 
+## Accuracy Results
+
+The following table shows the UNET model training results with different batch sizes and loss functions:
+
+| Batch Size | Loss Function          | mIOU |
+|------------|------------------------|------|
+| 4          | BCE                    | 53.4 |
+| 4          | MSE                    | 57.1 |
+| 4          | Combined Loss (WBCE+FL)| 63.2 |
+| 8          | BCE                    | 52.8 |
+| 8          | MSE                    | 55.9 |
+| 8          | Combined Loss (WBCE+FL)| 58.4 |
+| 16         | BCE                    | 51.6 |
+| 16         | MSE                    | 51.3 |
+| 16         | Combined Loss (WBCE+FL)| 54.7 |
+
+Abbreviations:
+- WBCE: Weighted Binary Cross Entropy
+- FL: Focal Loss
+- BCE: Binary Cross Entropy
+- MSE: Mean Squared Error
+
 ### Results
 
 The results demonstrate the effectiveness of the U-Net model with VGG19 backbone in segmenting rail track features:
