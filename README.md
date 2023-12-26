@@ -44,7 +44,6 @@ The dataset's detailed annotations are crucial for generating precise rail track
 - **Copy and Concatenate**: Merges multi-level features for improved localization.
 - **Convolutional Layers + Batch Normalization**: Refines the feature maps to deliver the final segmented output.
 
-### Fig 1. U-Net Architecture with VGG Backbone
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/VGG-Unet.png)
 
 ## Dataset Composition
@@ -95,7 +94,7 @@ We average weighted binary crossentropy and focal loss to create a robust loss l
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/combined.png)
 
 Here is the loss graph from our training process, showing the model's learning progress:
-### Fig 3. Loss Graph
+### Loss Graph
 ![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS/blob/main/assets/lossgraph.png)
 
 ## Accuracy Results
