@@ -106,7 +106,7 @@ The following table shows the UNET model training results with different batch s
 |------------|------------------------|------|
 | 4          | BCE                    | 53.4 |
 | 4          | MSE                    | 57.1 |
-| 4          | Combined Loss (WBCE+FL)| 63.2 |
+| **4**      | **Combined Loss (WBCE+FL)** | **63.2** |
 | 8          | BCE                    | 52.8 |
 | 8          | MSE                    | 55.9 |
 | 8          | Combined Loss (WBCE+FL)| 58.4 |
@@ -114,12 +114,14 @@ The following table shows the UNET model training results with different batch s
 | 16         | MSE                    | 51.3 |
 | 16         | Combined Loss (WBCE+FL)| 54.7 |
 
-Abbreviations:
-- WBCE: Weighted Binary Cross Entropy
-- FL: Focal Loss
-- BCE: Binary Cross Entropy
-- MSE: Mean Squared Error
+The best-performing model uses a batch size of 4 and a combined loss function consisting of Weighted Binary Cross Entropy (WBCE) and Focal Loss (FL), achieving a mean Intersection over Union (mIOU) of 63.2.
 
+Abbreviations:
+- **WBCE**: Weighted Binary Cross Entropy
+- **FL**: Focal Loss
+- **BCE**: Binary Cross Entropy
+- **MSE**: Mean Squared Error
+  
 ### Results
 
 The results demonstrate the effectiveness of the U-Net model with VGG19 backbone in segmenting rail track features:
