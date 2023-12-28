@@ -173,7 +173,7 @@ Make sure you have the following installed:
 
 ### Installation
 1. git clone [https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE.git](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FODS)
-2. cd RT-FE
+2. cd RT-FE/pipeline
 3. pip install -r requirements.txt
 
 ### Running the Project
