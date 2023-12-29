@@ -1,6 +1,6 @@
 # Rail Track Feature Extraction (RT-FE)
 
-[![Rail Track Feature Extraction Example](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/Focal.png)](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/rtfe20sec.mp4)
+[![Rail Track Feature Extraction Example](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/Focal.png)](https://www.youtube.com/watch?v=jygJ-lY5XCo)
 
 
 ## Introduction
@@ -34,6 +34,17 @@ The RailSem19 dataset is instrumental in our model’s development, offering an 
 
 **Implementation in RT-FE**:
 The dataset's detailed annotations are crucial for generating precise rail track masks, fundamental to the training of our segmentation model.
+
+## Project workflow
+
+![Workflow](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/RT-FE%20flowchart.png)
+
+- **Video Ingestion**: The process begins with the input video, which is the raw footage needing analysis.
+- **Frame Extraction**: The input video is broken down into individual frames to allow for detailed processing of each moment in the footage.
+- **Image Preprocessing**: Each extracted frame undergoes preprocessing, which may include normalization, resizing, and augmentation to prepare for effective segmentation.
+- **Segmentation Model**: A specialized segmentation model, UNET with a VGG19 architecture, is employed to analyze each preprocessed frame, identifying and isolating the features of interest.
+- **Post-Processing**: The output from the segmentation model is then refined through post-processing to enhance the accuracy of the segmentation, remove noise, and improve the clarity of the resultant masks.
+- **Mask Generation**: The post-processed frames are combined to produce output masks that highlight the features extracted from the original video, completing the feature extraction process.
 
 ## Deep Learning Model
 
