@@ -194,7 +194,7 @@ Make sure you have the following installed:
 
 ### Training the Segment Model
 1. cd training_scripts
-2. use tfrecorder.ipynb to convert the images and mask to tfrecord
+2. use the tfrecorder.ipynb to convert the images and mask to tfrecord format to efficiently load the data into the model
 3. run python trainer_rt-fe.py
    
 ### Running the Project
