@@ -1,3 +1,9 @@
+"""
+Use this script to generate binary mask
+from json annotated files from the RailSem19 dataset
+"""
+
+
 import os
 import json
 from PIL import Image, ImageDraw
