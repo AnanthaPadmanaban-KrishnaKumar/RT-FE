@@ -1,5 +1,10 @@
 # Rail Track Feature Extraction (RT-FE)
 
+<p float="left">
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/output_video.gif" width="49%" style="margin-right: 2%;" />
+  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/input_video.gif" width="49%" />
+</p>
+
 ![Rail](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/output_video.gif)
 
 ## Introduction
