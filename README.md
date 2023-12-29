@@ -1,6 +1,6 @@
 # Rail Track Feature Extraction (RT-FE)
 
-![Workflow](https://www.youtube.com/watch?v=jygJ-lY5XCo)
+![Rail](https://github.com/AnanthaPadmanaban-KrishnaKumar/RT-FE/blob/main/assets/output_video.gif)
 
 ## Introduction
 RT-FE harnesses advanced deep learning to precisely extract features from rail tracks. This autonomous system is pivotal for tasks such as anomaly detection, significantly diminishing the need for manual data labeling and enhancing the efficiency and accuracy of rail track analysis.
