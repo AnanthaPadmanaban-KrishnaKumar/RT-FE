@@ -1,6 +1,6 @@
 # Rail Track Feature Extraction (RT-FE)
 
-[![Rail Track Feature Extraction Example](https://www.youtube.com/watch?v=jygJ-lY5XCo)]
+[![Rail Track Feature Extraction Example(https://www.youtube.com/watch?v=jygJ-lY5XCo)
 
 
 ## Introduction
