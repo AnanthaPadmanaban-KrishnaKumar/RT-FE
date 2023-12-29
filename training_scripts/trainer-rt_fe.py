@@ -1,3 +1,10 @@
+"""
+Use this script to train the rail feature extraction model.
+We load the dataset from aws s3 bucket in tfrecord format.
+
+"""
+
+
 import io
 import tensorflow as tf
 import os
