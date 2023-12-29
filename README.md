@@ -192,6 +192,11 @@ Make sure you have the following installed:
 2. cd RT-FE
 3. pip install -r requirements.txt
 
+### Training the Segment Model
+1. cd training_scripts
+2. use tfrecorder.ipynb to convert the images and mask to tfrecord
+3. run python trainer_rt-fe.py
+   
 ### Running the Project
 1. cd pipeline
 2. python main.py
